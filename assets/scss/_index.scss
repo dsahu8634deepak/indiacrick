@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import "variables";
+
+.homepage {
+    background: linear-gradient(45deg, #0f0f0f8a, #1e1f208a), url(../image/backimage.jpg);
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    background-color: #335775;
+    & .dp {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid whitesmoke;
+        & img {
+            border-radius: 50%;
+        }
+    }
+    & .heading {
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    & .subscribe {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    & .teading {
+        font-size: 25px;
+        text-align: center;
+    }
+    & .bank {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    & .somet {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    & .hinditext {
+        font-size: 22px;
+        text-align: center;
+    }
+    & .lasttext {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    & .mainbtn {
+        width: 200px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        overflow: hidden;
+        animation: zoomInOut 4s infinite; /* Adjust the duration as needed */
+        &:hover {
+        }
+        & img {
+            user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    }
+    & .col-bg {
+        background-color: #1e1e1e;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+    }
+    @keyframes zoomInOut {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2); /* Zoom in */
+        }
+        100% {
+            transform: scale(1); /* Zoom out */
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@mixin index-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin index-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin index-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin index-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin index-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin index-mixin-max-xs() {
+    .homepage {
+        & .dp {
+            width: 80;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        & .heading {
+            font-size: 30px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        & .subscribe {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        & .teading {
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        & .bank {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        & .somet {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        & .hinditext {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        & .lasttext {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+        & .mainbtn {
+            width: 200px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin index-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin index-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin index-mixin-max-lg() {
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin index-mixin-max-xl() {
+}
